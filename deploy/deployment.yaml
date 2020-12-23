@@ -12,7 +12,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: bendaun3k900/simple-reverse-proxy
+      - image: YOUR_DOCKER_HUB/simple-reverse-proxy
         name: reverseproxy
         imagePullPolicy: Always          
         resources:
@@ -25,5 +25,3 @@ spec:
         ports:
         - containerPort: 8080
       restartPolicy: Always
-
-
